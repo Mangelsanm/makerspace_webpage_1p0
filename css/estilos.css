@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body{
+	font-family: 'Open Sans', sans-serif; /*fuente para el body*/
+}
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Yanone Kaffeesatz', sans-serif; /*fuente para los titulos*/
+	letter-spacing: 1px; /*espacio entre las letras*/
+}
+
+/*------------------Estilos del header------------------*/
+.header{
+	height: 60px;
+}
+
+.header .contenedor{
+	display: flex;
+	justify-content: space-between;
+}
+.logo{
+	margin: 5px;
+}
+.icon-menu{
+	display: block; /*icon-menu es un span por lo tanto un elemento Inline*/
+	width: 40px; /*dado que icon-menu ahora es un elemento de bloque se*/
+	height: 40px; /*puede usar width y height*/
+	font-size: 30px;
+	text-align: center;
+	line-height: 45px;
+	background: #FBA919;
+	color: #FFF;
+	border-radius: 5px;
+	cursor: pointer;
+}
+/*-------------------Estilos del menu-------------------*/
+.nav{
+	position: absolute; /*para sacarlo fuera del flujo de trabajo y se */
+	top: 60px; /*posicione en relacion al elemento padre mas cercano */
+	left: -100%; /*el cual es en este caso la ventana del navegador*/
+	width: 100%;
+	transition: all 0.4s;
+}
+.menu{
+	list-style: none; /*eliminamos los estilos de la lista*/
+	padding: 0;
+	margin: 0;
+}
+.menu__link{
+	display: block;
+	padding: 15px;;
+	background: #FBA919;
+	color: #FFF;
+	text-decoration: none;
+}
+.menu__link:hover{
+	background: #FFF;
+	color: #FBA919;
+}
+.mostrar{
+	left: 0;
+}
