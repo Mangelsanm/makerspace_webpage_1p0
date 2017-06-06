@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body{
+	margin: 0;
 	font-family: 'Open Sans', sans-serif; /*fuente para el body*/
 }
 h1, h2, h3, h4, h5, h6{
@@ -36,9 +37,9 @@ h1, h2, h3, h4, h5, h6{
 .nav{
 	position: absolute; /*para sacarlo fuera del flujo de trabajo y se */
 	top: 60px; /*posicione en relacion al elemento padre mas cercano */
-	left: -100%; /*el cual es en este caso la ventana del navegador*/
+	margin-left: -100%; /*el cual es en este caso la ventana del navegador*/
 	width: 100%;
-	transition: all 0.4s;
+	transition: all 0.5s;
 }
 .menu{
 	list-style: none; /*eliminamos los estilos de la lista*/
@@ -47,7 +48,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .menu__link{
 	display: block;
-	padding: 15px;;
+	padding: 15px;
 	background: #FBA919;
 	color: #FFF;
 	text-decoration: none;
@@ -57,5 +58,23 @@ h1, h2, h3, h4, h5, h6{
 	color: #FBA919;
 }
 .mostrar{
+	margin-left: 0;
+}
+.select{
+	background: #FFF;
+	color: #FBA919;
+}
+/*-------------------Estilos del banner-------------------*/
+.banner{
+	margin-top: -60px;
+	z-index: -100;
+}
+.banner .contenedor{
+	border: 1px solid red;
+}
+.banner__titulo{
+	border: 1px solid blue;
+	position: relative;
+	top: 0;
 	left: 0;
 }
