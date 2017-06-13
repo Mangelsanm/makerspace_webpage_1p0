@@ -20,6 +20,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .logo{
 	margin: 5px;
+	color: #FFF;
 }
 .icon-menu{
 	display: block; /*icon-menu es un span por lo tanto un elemento Inline*/
@@ -67,14 +68,61 @@ h1, h2, h3, h4, h5, h6{
 /*-------------------Estilos del banner-------------------*/
 .banner{
 	margin-top: -60px;
+	position: relative;
 	z-index: -100;
+	margin-bottom: 20px;
 }
 .banner .contenedor{
-	border: 1px solid red;
+	color: #FFF;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 100%;
+	text-align: center;
 }
-.banner__titulo{
-	border: 1px solid blue;
+/*---------------------Estilos de info---------------------*/
+.info__columna{
+	background: #FBA919;
+	color: #FFF;
+	padding: 15px;
+	margin-bottom: 30px;
+}
+/*---------------------Estilos de cursos---------------------*/
+.cursos__columna{
 	position: relative;
+	margin-bottom: 30px;
+}
+.cursos__descripcion{
+	position: absolute;
 	top: 0;
 	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #FFF;
+	width: 60%;
+	height: 100%;
+	padding: 5px;
+}
+.cursos__titulo{
+	font-size: 30px;
+	margin: 5px 0;
+}
+/*---------------------Estilos de footer---------------------*/
+.footer{
+	background: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+.footer .social [class^="icon-"]{
+	display: inline-block;
+	color: #333;
+	background: #fff;
+	text-decoration: none;
+	font-size: 30px;
+	padding: 10px;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	line-height: 60px;
 }
